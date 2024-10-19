@@ -1,0 +1,38 @@
+/* Full-screen dark theme layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0e0e0e; /* Dark background */
+    color: #00ff00; /* Neon green text */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.quote-container {
+    text-align: center;
+    max-width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.quote-text {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Smooth animation for quotes */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
